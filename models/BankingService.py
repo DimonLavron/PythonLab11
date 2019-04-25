@@ -8,4 +8,4 @@ class BankingService():
         self.service_fee = service_fee
 
     def __str__(self):
-        return srt(self.__dict__())
+        return str(self.__dict__)

@@ -7,4 +7,4 @@ class Credit(BankingService):
         self.type_of_credit = type_of_credit
 
     def __str__(self):
-        return "Credit: " + srt(self.__dict__())
+        return "Credit: " + str(self.__dict__)

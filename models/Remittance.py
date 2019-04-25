@@ -7,4 +7,4 @@ class Remittance(BankingService):
         self.type_of_remittance = type_of_remittance
 
     def __str__(self):
-        return "Remittance: " + srt(self.__dict__())
+        return "Remittance: " + str(self.__dict__)

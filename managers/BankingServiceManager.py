@@ -19,3 +19,8 @@ class BankingServiceManager():
 
     def sort_by_service_fee(self, services, reverse):
         return sorted(services, key = lambda service: service.service_fee, reverse = reverse)
+
+    def print_list(self, list):
+        for i in list:
+            print(i)
+        print("\n")

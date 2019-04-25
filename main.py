@@ -21,12 +21,12 @@ list_of_services = [credit1, deposit1, credit2, remittance1, deposit2, deposit3,
 
 manager = BankingServiceManager(list_of_services)
 
-print(manager.get_available_credits())
-print(manager.get_available_deposits())
-print(manager.get_available_credits_sorted_by_service_fee())
-print(manager.get_available_deposits_sorted_by_service_term())
+manager.print_list(manager.get_available_credits())
+manager.print_list(manager.get_available_deposits())
+manager.print_list(manager.get_available_credits_sorted_by_service_fee())
+manager.print_list(manager.get_available_deposits_sorted_by_service_term())
 
 list_of_services = manager.sort_by_service_fee(list_of_services, True)
-print(list_of_services)
+manager.print_list(list_of_services)
 list_of_services = manager.sort_by_service_fee(list_of_services, False)
-print(list_of_services)
+manager.print_list(list_of_services)

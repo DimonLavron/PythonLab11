@@ -7,4 +7,4 @@ class Deposit(BankingService):
         self.type_of_deposit = type_of_deposit
 
     def __str__(self):
-        return "Deposit: " + srt(self.__dict__())
+        return "Deposit: " + str(self.__dict__)
